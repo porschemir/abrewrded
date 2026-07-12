@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { X, Smartphone, Clock, Sparkles, ArrowRight, Check, Cake } from "lucide-react";
 
-const CTA_URL = "https://linkthem.net/aff_c?tl_id=37bc56ac&source=nine";
+const CTA_URL = "https://linkthem.net/aff_c?tl_id=37bc56ac&source=testwo";
 const UNDER_21_URL = "https://linkthem.net/aff_c?offer_id=4439";
 
 type Answers = {
