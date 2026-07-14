@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Zap, Lock, Star, Quote, DollarSign, ShieldCheck } from "lucide-react";
+import { Zap, Lock, Star, Quote, DollarSign, ShieldCheck, ArrowRight } from "lucide-react";
 import rewardedLogo from "@/assets/rewarded-logo.png.asset.json";
 import { EarningsPopups } from "@/components/EarningsPopups";
 import { EarningsQuiz } from "@/components/EarningsQuiz";
@@ -126,6 +126,8 @@ function Index() {
   const [quizOpen, setQuizOpen] = useState(false);
   const openQuiz = () => setQuizOpen(true);
 
+  const [bufferOpen, setBufferOpen] = useState(true);
+
   const [tomorrowStr, setTomorrowStr] = useState("");
   useEffect(() => {
     const t = new Date();
@@ -137,6 +139,27 @@ function Index() {
     <>
       <EarningsPopups />
       <EarningsQuiz open={quizOpen} onClose={() => setQuizOpen(false)} />
+
+      {bufferOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 p-3 backdrop-blur-sm animate-in fade-in duration-200">
+          <div className="w-full max-w-md rounded-3xl border border-border bg-card/60 p-6 text-center shadow-2xl sm:p-10">
+            <img src={rewardedLogo.url} alt="RewardedPlay" className="mx-auto h-10 w-10 rounded-2xl border border-border shadow-sm" />
+
+            <h1 className="mt-6 text-2xl font-extrabold sm:text-3xl">
+              Click here to continue
+            </h1>
+
+            <button
+              type="button"
+              onClick={() => setBufferOpen(false)}
+              className="group relative mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-brand px-8 py-5 text-center text-lg font-bold tracking-wide text-white shadow-cta transition-transform hover:scale-[1.02] active:scale-[0.99]"
+            >
+              Continue
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+      )}
 
       <main className="mx-auto w-full max-w-[440px] px-4 pb-16 pt-6 sm:max-w-3xl sm:px-5 sm:pt-8">
         {/* Brand + live stacking */}

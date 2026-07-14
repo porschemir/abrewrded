@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { X, Smartphone, Clock, Sparkles, ArrowRight, Check, Cake } from "lucide-react";
-
-const CTA_URL = "https://linkthem.net/aff_c?tl_id=37bc56ac&source=testwo";
-const UNDER_21_URL = "https://linkthem.net/aff_c?offer_id=4439";
+import { CTA_URL, UNDER_21_URL } from "@/lib/constants";
 
 type Answers = {
   age: "21+" | "Under 21" | null;
@@ -135,12 +133,7 @@ export function EarningsQuiz({ open, onClose }: { open: boolean; onClose: () => 
               selected={answers.age}
               onSelect={(v) => {
                 setAnswers((a) => ({ ...a, age: v as Answers["age"] }));
-                if (v === "Under 21") {
-                  setIneligible(true);
-                  window.location.href = UNDER_21_URL;
-                } else {
-                  setStep(1);
-                }
+                setStep(1);
               }}
             />
           )}
