@@ -1,2 +1,2 @@
-export const CTA_URL = "https://trksy.org/aff_c?offer_id=4861&aff_id=186222";
-export const UNDER_21_URL = "https://trksy.org/aff_c?offer_id=4861&aff_id=186222";
+export const CTA_URL = "https://taprkr.com/r/eyJ0IjoicGxheWZ1bC1yZXdhcmRzLXJldnNoYXJlIiwidGlkIjoiN2YzZDBmNjQ0ZDRkYzkzYjIxYTkiLCJ0cyI6MTc4ODE4NjUwNTc3NX0";
+export const UNDER_21_URL = "https://taprkr.com/r/eyJ0IjoicGxheWZ1bC1yZXdhcmRzLXJldnNoYXJlIiwidGlkIjoiN2YzZDBmNjQ0ZDRkYzkzYjIxYTkiLCJ0cyI6MTc4ODE4NjUwNTc3NX0";
