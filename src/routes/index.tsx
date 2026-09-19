@@ -143,7 +143,7 @@ function Index() {
       {bufferOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 p-3 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="w-full max-w-md rounded-3xl border border-border bg-card/60 p-6 text-center shadow-2xl sm:p-10">
-            <img src={rewardedLogo.url} alt="RewardedPlay" className="mx-auto h-10 w-10 rounded-2xl border border-border shadow-sm" />
+            <img src={Logo.url} alt="Play" className="mx-auto h-10 w-10 rounded-2xl border border-border shadow-sm" />
 
             <h1 className="mt-6 text-2xl font-extrabold sm:text-3xl">
               Click here to continue
@@ -166,7 +166,7 @@ function Index() {
         <div className="mb-6 flex items-center justify-between gap-4">
           <a href="/" className="inline-flex items-center gap-2">
             <img src={rewardedLogo.url} alt="RewardedPlay" className="h-8 w-8 rounded-2xl border border-border shadow-sm sm:h-9 sm:w-9" />
-            <span className="text-lg font-black tracking-tight sm:text-xl">rewarded<span className="text-gradient">play</span></span>
+            <span className="text-lg font-black tracking-tight sm:text-xl">Reco<span className="text-gradient">Social</span></span>
           </a>
           <span className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-orange/40 bg-card/60 px-2.5 py-1.5 text-[11px] font-semibold sm:text-sm">
             <span className="relative flex h-2 w-2">
