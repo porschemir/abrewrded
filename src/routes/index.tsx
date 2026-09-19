@@ -143,7 +143,7 @@ function Index() {
       {bufferOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 p-3 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="w-full max-w-md rounded-3xl border border-border bg-card/60 p-6 text-center shadow-2xl sm:p-10">
-            <img src={Logo.url} alt="Play" className="mx-auto h-10 w-10 rounded-2xl border border-border shadow-sm" />
+            <img src={RewardedLogo.url} alt="RewardedPlay" className="mx-auto h-10 w-10 rounded-2xl border border-border shadow-sm" />
 
             <h1 className="mt-6 text-2xl font-extrabold sm:text-3xl">
               Click here to continue
